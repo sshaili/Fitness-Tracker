@@ -13,7 +13,8 @@ let db = require('./models');
 mongoose.connect('mongodb://shailishah:admin2912@ds047447.mlab.com:47447/heroku_57vwf0ps',
  {
   useNewUrlParser: true,
-  useFindAndModify: false
+  useFindAndModify: false,
+  useUnifiedTopology: true
 });
 
 const PORT = process.env.PORT || 3000;
